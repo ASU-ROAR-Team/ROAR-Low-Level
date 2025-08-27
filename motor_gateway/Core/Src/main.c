@@ -117,7 +117,7 @@ void can_irq(CAN_HandleTypeDef *pcan)
   /* Simply receive whatever message comes in */
   if (HAL_CAN_GetRxMessage(pcan, CAN_RX_FIFO0, &rxHeader, rxData) == HAL_OK)
   {
-    messageReceived = 1;
+      messageReceived = 1;
   }
 }
 
